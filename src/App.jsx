@@ -9,7 +9,7 @@ const CITIES = ["London", "Tokyo", "New York", "Paris", "Sydney", "Dubai", "Rome
 function Home() {
   return (
     <>
-      <header style={{ textAlign: "center", padding: "20px", background: "#f4f4f4" }}>
+      <header style={{ textAlign: "center", padding: "20px" }}>
         <h1>🌍 PlacePicker</h1>
         <p>Where would you like to go?</p>
       </header>
@@ -17,10 +17,10 @@ function Home() {
       <main style={{ maxWidth: "800px", margin: "auto", padding: "20px" }}>
         <nav>
           <h2>Explore Cities</h2>
-          <ul style={{ listStyle: "none", padding: 0 }}>
+          <ul style={{ listStyle: "none", padding: 0}}>
             {CITIES.map((city) => (
-              <li key={city} style={{ marginBottom: "5px" }}>
-                <Link to={`/city/${city}`} style={{ textDecoration: "none", color: "#007bff" }}>
+              <li key={city} style={{ marginBottom: "5px"  , display: "inline", marginLeft: "10px" , textAlign: "left"}}>
+                <Link to={`/city/${city}`} style={{ textDecoration: "none", color: "blue" }}>
                   {city}
                 </Link>
               </li>
